@@ -1,0 +1,28 @@
+# Node
+node_modules/
+.next/
+out/
+build/
+.npm
+frontend-next/.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.env
+venv/
+env/
+ENV/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project Specific
+uploads/
+chroma_db/
+reports/
+logs/
+.gemini/
