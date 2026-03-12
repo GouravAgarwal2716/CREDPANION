@@ -18,6 +18,11 @@ from langchain_core.documents import Document
 # don't re-embed the same documents repeatedly per request.
 _vectorstore_cache = {}
 
+def get_embeddings():
+    """Returns the Google Generative AI embeddings model."""
+    return GoogleGenerativeAIEmbeddings(model="models/embedding-001")
+
+
 def create_or_get_vectorstore(file_paths: List[str]) -> Optional[Chroma]:
     """
     Given a list of PDF file paths, extracts the text, creates embeddings,
